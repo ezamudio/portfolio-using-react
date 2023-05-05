@@ -6,12 +6,10 @@ const styles = {
     padding: '20px',
     textAlign: 'center',
     borderTop: '1px solid #ddd',
-    position: 'absolute',
-    left: 0,
-    bottom: 0,
-    width: '100%',
+    marginTop: '200px',
   },
 };
+
 
 const Footer = () => (
   <div style={styles.footer}>

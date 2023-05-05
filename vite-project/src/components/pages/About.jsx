@@ -1,16 +1,7 @@
 import React from 'react';
+import SnoopyImage from '../pages/images/MeandSnoopy.jpeg'
 
 const styles = {
-  h1: {
-    margin: 20,
-    background: '#3f51b5',
-    minHeight: 50,
-    lineHeight: 3.5,
-    fontSize: '1.2rem',
-    color: 'white',
-    padding: '0 20px',
-    textAlign: 'center',
-  },
   content: {
     display: 'flex',
     flexDirection: 'column',
@@ -18,10 +9,13 @@ const styles = {
     padding: 20,
   },
   image: {
-    maxWidth: '100%',
+    maxWidth: '25%',
     height: 'auto',
     marginBottom: 20,
+    borderRadius: 10,
+    boxShadow: '0px 2px 6px rgba(0, 0, 0, 0.3)',
   },
+  
   paragraph: {
     background: '#f5f5f5',
     borderRadius: 10,
@@ -32,9 +26,8 @@ const styles = {
 export default function About() {
   return (
     <div>
-      <h1 style={styles.h1}>About Me Page</h1>
       <div style={styles.content}>
-        <img src="../assets/images/MeandSnoopy.jpeg" alt="Profile Picture" style={styles.image} />
+        <img src= {SnoopyImage} alt="Profile Picture" style={styles.image} />
         <div style={styles.paragraph}>
           <p>
           Hello there! My name is Francisco Monteon, and I am a Scrum Master with a passion for learning programming. 
