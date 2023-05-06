@@ -1,6 +1,6 @@
 import React from 'react';
 import '../components/pages/styles/styles.css';
-import Header from './Header';
+import Header from './header';
 
 function Navbar({ currentPage, handlePageChange }) {
   return (
@@ -8,7 +8,7 @@ function Navbar({ currentPage, handlePageChange }) {
       <ul className="nav nav-tabs">
         <li className="nav-item">
           <a
-            href="#about"
+            href="#About"
             onClick={() => handlePageChange('About')}
             className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
           >
@@ -26,16 +26,16 @@ function Navbar({ currentPage, handlePageChange }) {
         </li>
         <li className="nav-item">
           <a
-            href="#blog"
-            onClick={() => handlePageChange('Blog')}
-            className={currentPage === 'Blog' ? 'nav-link active' : 'nav-link'}
+            href="#Portfolio"
+            onClick={() => handlePageChange('Portfolio')}
+            className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
           >
-            Blog
+            Portfolio
           </a>
         </li>
         <li className="nav-item">
           <a
-            href="#contact"
+            href="#Contact"
             onClick={() => handlePageChange('Contact')}
             className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
           >
@@ -43,7 +43,7 @@ function Navbar({ currentPage, handlePageChange }) {
           </a>
         </li>
       </ul>
-      <Header currentPage={currentPage} />
+           <Header currentPage={currentPage} />
     </nav>
   );
 }
