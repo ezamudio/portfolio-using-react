@@ -26,6 +26,7 @@ export default function PortfolioContainer() {
 
   return (
     <div>
+      <header>Francisco Monteon's Portfolio</header>
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
       {renderPage()}
       <Footer />
