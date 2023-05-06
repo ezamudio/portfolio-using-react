@@ -9,8 +9,8 @@ function Header({ currentPage }) {
     case 'Resume':
       headerText = 'Resume';
       break;
-    case 'Blog':
-      headerText = 'Blog';
+    case 'Portfolio':
+      headerText = 'Portfolio';
       break;
     case 'Contact':
       headerText = 'Contact';
