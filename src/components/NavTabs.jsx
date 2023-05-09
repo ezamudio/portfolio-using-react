@@ -1,49 +1,55 @@
 import React from 'react';
 import '../components/pages/styles/styles.css';
-import Header from './header';
+import Header from './Header';
 
 function Navbar({ currentPage, handlePageChange }) {
   return (
     <nav>
-      <ul className="nav nav-tabs">
-        <li className="nav-item">
+      <ul className='nav nav-tabs'>
+        <li className='nav-item'>
           <a
-            href="#About"
+            href='#About'
             onClick={() => handlePageChange('About')}
             className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
           >
             About Me
           </a>
         </li>
-        <li className="nav-item">
+        <li className='nav-item'>
           <a
-            href="#Resume"
+            href='#Resume'
             onClick={() => handlePageChange('Resume')}
-            className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
+            className={
+              currentPage === 'Resume' ? 'nav-link active' : 'nav-link'
+            }
           >
             Resume
           </a>
         </li>
-        <li className="nav-item">
+        <li className='nav-item'>
           <a
-            href="#Portfolio"
+            href='#Portfolio'
             onClick={() => handlePageChange('Portfolio')}
-            className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
+            className={
+              currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'
+            }
           >
             Portfolio
           </a>
         </li>
-        <li className="nav-item">
+        <li className='nav-item'>
           <a
-            href="#Contact"
+            href='#Contact'
             onClick={() => handlePageChange('Contact')}
-            className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
+            className={
+              currentPage === 'Contact' ? 'nav-link active' : 'nav-link'
+            }
           >
             Contact
           </a>
         </li>
       </ul>
-           <Header currentPage={currentPage} />
+      <Header currentPage={currentPage} />
     </nav>
   );
 }
