@@ -21,6 +21,7 @@ function Header({ currentPage }) {
 
   return (
     <header className="header">
+    Esto es una prueba
       <h1>{headerText}</h1>
     </header>
   );
