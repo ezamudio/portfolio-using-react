@@ -19,6 +19,7 @@ const styles = {
 
 const Footer = () => (
   <div style={styles.footer}>
+  <h2>This is a test</h2>
     <p> Francisco Monteon</p>
     <a href="https://github.com/MonteonFrank?tab=repositories">
       <img src={githublogo} alt="Github" style={styles.logo} />
